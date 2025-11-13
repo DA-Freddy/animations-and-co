@@ -1,0 +1,14 @@
+<h2>Meine Projekte</h2>
+<ul>
+   @for (item of projects; track $index) {
+    <li>{{item.projectname}} aus dem Modul
+        {{item.modul}} - 
+        @if(item.done){
+            erledigt
+        }
+        @else {
+            in Arbeit
+        }
+    </li>
+   }
+</ul>

@@ -1,0 +1,56 @@
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger{
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../../../public/img/header/hamburger1.png);
+}
+
+.open-animation{
+    animation: openAnimation 0.5s linear forwards;
+}
+
+.close-animation{
+    animation: closeAnimation 0.5s linear forwards;
+}
+
+@keyframes openAnimation {
+    0%{
+        background-image: url(../../../../public/img/header/hamburger1.png);
+    }
+    25%{
+        background-image: url(../../../../public/img/header/hamburger2.png);
+    }
+    50%{
+        background-image: url(../../../../public/img/header/hamburger3.png);
+    }
+    75%{
+        background-image: url(../../../../public/img/header/hamburger4.png);
+    }
+    100%{
+        background-image: url(../../../../public/img/header/hamburger5.png);
+    }
+}
+
+@keyframes closeAnimation {
+    0%{
+        background-image: url(../../../../public/img/header/hamburger5.png);
+    }
+    25%{
+        background-image: url(../../../../public/img/header/hamburger4.png);
+    }
+    50%{
+        background-image: url(../../../../public/img/header/hamburger3.png);
+    }
+    75%{
+        background-image: url(../../../../public/img/header/hamburger2.png);
+    }
+    100%{
+        background-image: url(../../../../public/img/header/hamburger1.png);
+    }
+}

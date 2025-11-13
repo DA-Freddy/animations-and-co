@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'styles/variables.scss' as *;
+
+body{
+   
+    font-family:  Arial, sans-serif;
+}
+
+h2{
+    color: $primary-color;
+    font-size: 30px;
+}

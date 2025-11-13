@@ -1,0 +1,11 @@
+<h2>Über mich</h2>
+<p>Ich heiße {{firstname}} und bin IT-Dozent</p>
+<p>Ich habe {{ children.length }} Kinder. Diese heißen:</p>
+<ul>
+    @for (singleChild of children; track $index) {
+    <li>Kind Nummer {{$index + 1}} {{singleChild}}</li>
+    }
+</ul>
+<div class="arrow-container">
+    <img class="arrow" src="img/arrow.png" alt="">
+</div>
