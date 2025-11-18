@@ -1,0 +1,11 @@
+{
+    "landingPage": {
+        "title": "Willkommen auf meiner Startseite! :)"
+    },
+    "aboutMe": {
+        "title": "Über mich",
+        "iAm": "Ich heiße <strong>Freddy</strong> und bin IT Dozent",
+        "children" : "Ich habe {{ children }} Kinder. Diese heißen:",
+        "arrow" : "Pfeil"
+    }
+}

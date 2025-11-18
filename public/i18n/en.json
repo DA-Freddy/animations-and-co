@@ -1,0 +1,11 @@
+{
+    "landingPage": {
+        "title": "Welcome to my landing page! :)"
+    },
+    "aboutMe": {
+        "title": "About me",
+        "iAm": "I am <strong>Freddy</strong>",
+        "children": "Ich habe {{ children }} Kinder. Diese heißen:",
+        "arrow": "Arrow"
+    }
+}

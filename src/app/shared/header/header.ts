@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from "@angular/router";
+import {TranslatePipe, TranslateDirective, TranslateService} from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-header',
@@ -8,9 +10,15 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
   styleUrl: './header.scss',
 })
 export class Header {
-  openMenu : boolean = false;
+  openMenu: boolean = false;
 
-  startAnimation(){
+  private translate = inject(TranslateService);
+
+  useLanguage(language: string): void {
+    this.translate.use(language);
+  }
+
+  startAnimation() {
     this.openMenu = !this.openMenu;
     // if(this.openMenu){
     //   this.openMenu = false;
@@ -19,4 +27,6 @@ export class Header {
     //   this.openMenu = true;
     // }
   }
+
+
 }

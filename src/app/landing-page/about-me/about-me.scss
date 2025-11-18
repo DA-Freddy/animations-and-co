@@ -14,15 +14,15 @@ h2{
 
 @keyframes translateAnimation {
   0% {
-    transform: translateY(-200px); // Startposition: nicht verschoben
+    transform: translateY(-200px); 
   }
   20% {
-    transform: translateY(0px); // Endposition: 100px nach rechts verschoben
+    transform: translateY(0px); 
   }
   40% {
-    transform: translateY(-50px); // Endposition: 100px nach rechts verschoben
+    transform: translateY(-50px); 
   }
   100% {
-    transform: translateY(150px); // Endposition: 100px nach rechts verschoben
+    transform: translateY(150px); 
   }
 }

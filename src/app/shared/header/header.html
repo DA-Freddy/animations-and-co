@@ -1,6 +1,10 @@
 <section>
     <img src="img/header/header_da.svg" alt="">
-    <div class="hamburger" [class]="{'open-animation' : openMenu, 'close-animation': !openMenu}" (click)="startAnimation()">
-
+    <div>
+        <button (click)="useLanguage('en')">en</button>
+        <button (click)="useLanguage('de')">de</button>
+    </div>
+    <div class="hamburger" [class]="{'open-animation' : openMenu, 'close-animation': !openMenu}"
+        (click)="startAnimation()">
     </div>
 </section>
