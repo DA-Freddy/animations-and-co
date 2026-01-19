@@ -4,6 +4,7 @@ import { LandingPage } from './landing-page/landing-page';
 import { Header } from './shared/header/header';
 
 
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, LandingPage, Header],
@@ -12,4 +13,6 @@ import { Header } from './shared/header/header';
 })
 export class App {
   protected readonly title = signal('newTwenty');
+
+  
 }

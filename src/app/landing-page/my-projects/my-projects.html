@@ -1,6 +1,6 @@
 <h2>Meine Projekte</h2>
 <ul>
-   @for (item of projects; track $index) {
+   @for (item of projectsService.projects; track $index) {
     <li>{{item.projectname}} aus dem Modul
         {{item.modul}} - 
         @if(item.done){
@@ -12,3 +12,53 @@
     </li>
    }
 </ul>
+<!-- <div class="example-container">
+  <h2>To do</h2>
+
+  <div
+    cdkDropList
+    #todoList="cdkDropList"
+    [cdkDropListData]="todo"
+    [cdkDropListConnectedTo]="[doneList, feedbackList]"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    @for (item of todo; track item) {
+      <div class="example-box" cdkDrag>{{item}}</div>
+    }
+  </div>
+</div>
+
+<div class="example-container">
+ <h2>Feedback</h2>
+
+  <div
+    cdkDropList
+    #feedbackList="cdkDropList"
+    [cdkDropListData]="feedback"
+    [cdkDropListConnectedTo]="[doneList, todoList]"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    @for (item of feedback; track item) {
+      <div class="example-box" cdkDrag>{{item}}</div>
+    }
+  </div>
+</div>
+
+<div class="example-container">
+  <h2>Done</h2>
+
+  <div
+    cdkDropList
+    #doneList="cdkDropList"
+    [cdkDropListData]="done"
+    [cdkDropListConnectedTo]="[todoList, feedbackList]"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    @for (item of done; track item) {
+      <div class="example-box" cdkDrag>{{item}}</div>
+    }
+  </div>
+</div> -->
+
+
+

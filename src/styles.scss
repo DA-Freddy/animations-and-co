@@ -1,4 +1,13 @@
-@use 'styles/variables.scss' as *;
+
+// Include theming for Angular Material with `mat.theme()`.
+// This Sass mixin will define CSS variables that are used for styling Angular Material
+// components according to the Material 3 design spec.
+// Learn more about theming and how to use it for your application's
+// custom components at https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+@use './app/styles/variables.scss' as *;
+@use './app/styles/base.scss' as *;
+
 
 body{
    
@@ -9,3 +18,5 @@ h2{
     color: $primary-color;
     font-size: 30px;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

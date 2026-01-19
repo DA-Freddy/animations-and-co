@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Project } from '../../project';
 import {TranslatePipe} from '@ngx-translate/core';
+import { Projects } from '../../services/projects';
 
 
 @Component({
@@ -14,4 +15,6 @@ export class AboutMe {
   age : number = 31;
   married: boolean = false;
   children : readonly (string | number)[] = ['Max', 'Lisa', 234 ,'Emma'];
+
+  projectService = inject(Projects);
 }

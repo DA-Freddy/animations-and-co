@@ -1,6 +1,7 @@
 <h2>{{ 'aboutMe.title' | translate }}</h2>
 <p [innerHTML]="'aboutMe.iAm' | translate"></p>
 <p>{{ 'aboutMe.children' | translate:{children} }}</p>
+<p class="standard-text">Ich habe schon {{ projectService.projects.length }} Projekte erstellt.</p>
 <ul>
     @for (singleChild of children; track $index) {
     <li>Kind Nummer {{$index + 1}} {{singleChild}}</li>
